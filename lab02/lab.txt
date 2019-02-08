@@ -1,0 +1,30 @@
+2.1
+  a. Both local search algorithms solve the problem equally well, it seems.
+  b. Hill climbing was significantly faster (by a factor of 100).
+  c. It does make a difference. Because as it increases, the amount of hill that the hill-climbing algorithm
+        has to climb increases as well.
+  d. Changing the delta step value doesn't make either of them faster, but it does make them (occasionally)
+        get an incorrect answer.
+  e. This is the function that determines the decay in probability that the simulated annealing function
+        jumps to the side (to avoid the pitfalls of the hill-climbing algorithm).
+
+2.2
+  a. Simulated annealing finds a higher maximum most of the time. This is because it isn't stuck on the track
+        that it begins on, like hill-climbing is.
+  b. The starting point makes a huge difference here, with both of the functions finding better solutions
+        the higher your starting point.
+  c. With a much larger delta, both functions started finding answers in the negatives. I am not sure why this is,
+        since an absolute value function like this can never be negative.
+  d. The max for this function is 30, which I saw the simulated annealing algorithm get several times. I never saw
+        hill-climbing get it. The minimum is zero, and I never saw either of them get that, so that's good.
+        overall, simulated annealing did much better on average.
+
+2.3
+  a.
+  b.
+  c.
+
+2.4
+  a.
+  b.
+  c.
