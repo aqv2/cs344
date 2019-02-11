@@ -20,11 +20,23 @@
         overall, simulated annealing did much better on average.
 
 2.3
-  a.
-  b.
-  c.
+  a. Both algorithms seem to do alright with these restarts, given a large enough sample size of restarts (I
+        used 1000 restarts each). It makes sense that random restarts lower the variance of both of them, but
+        given that hill-climbing has higher variance (depending on your starting value) in the first place,
+        it does seem to benefit more from this.
+  b. The average for hill-climbing was about 13, and the average speed was 1*10^-5. For simulated annealing, the
+        average was 21 and the average speed was 0.0045.
+  c. However, given the averages above, neither of them seems that much better than the other. However, it is
+        worth noting that simulated annealing did find the largest local maximum at 41.5, compared to hill-
+        climbing's 30. So simulated annealing, despite the very slight drawback of running slower, did find
+        a better result across the board. It is worth noting, too, that simulated annealing had a higher average
+        value even though it had some negative answers. Hill-climbing can never do that in this situation. So
+        not only was simulated annealing better, it was so much better that it was still better after accounting
+        for a major downside it has compared to hill-climbing.
 
 2.4
-  a.
-  b.
-  c.
+  a. Beam search makes the most sense for the hill-climbing algorithm.
+  b. Far, far more than even the 1000 non-concurrent searches that I did with random restarts.
+  c. Each time I found a value that gave a better result, I would remove it and the values lower than it from
+        the possibility of being chosen next random restart. This is different from random restarts because
+        it is another layer of answer-refinement on top of random restarts.
