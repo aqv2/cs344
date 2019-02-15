@@ -9,7 +9,6 @@ from tools.aima.search import Problem, hill_climbing, simulated_annealing, \
 from random import randrange
 import math
 import time
-import numpy as np
 
 
 class AbsVariant(Problem):

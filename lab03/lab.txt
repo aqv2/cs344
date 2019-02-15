@@ -1,0 +1,34 @@
+3.1
+a) DFS does not work (within a reasonable time frame) for any puzzle (except the solved one, which doesn't count)
+    this makes sense, given that it is going though the entire tree of possible solutions with no heuristic or
+    anything. Yikes.
+    AC-3 works reasonably fast for the easy puzzle, but fails for harder puzzles, since it is trying to balance
+    too many things at once.
+    Backtracking search works reasonably fast for the easiest problem, but takes too long on the harder ones.
+    This makes sense because, unless it gets lucky and makes it down a successfully branch on its first try, it
+    is really quite inefficient.
+    Min-conflicts fails for all problems after way too long. This makes sense, especially for the harder
+    problems, because there are just SO many conflicts that it is going to take a long time to minimize them.
+
+b) Using mrv and forward-checking should work the best, so that it is gradually narrowing the search space as it goes.
+    And, sure enough, using these settings makes it solve even the hardest problem in a fraction of a second.
+
+
+3.2
+a) AC-3 fails for everything. This is because the algorithm is not built to balance multiple things simultaneously.
+    Basic backtracking search works reasonably quickly for n < about 25. This is because the graph of possible
+    solutions is not so large that the backtracking takes too long. The same backtracking settings from the last
+    problem work the best, here. It also helps that there are multiple solutions to this problem.
+    Min-conflicts has a maximum step number of 100,000. It uses from about 40 to about 60 for most problems, but
+    occasionally has outliers of about 100 more steps.
+
+
+3.3
+a) States are not really used in CSPs as such, while they are the bread and butter of search problems. The Domain in a
+    CSP is the values that could fill in a slot and ultimately provide a solution, while in search problems, the domain
+    isn't really an applicable concept. Actions in CSPs are arbitrary (or heuristic guided) assigning of values to a
+    potential solution, while in search problems, actions are changes made to the state. The result for both is
+    (ideally) a solution to the problem. The goal test is concept in search problems that doesn't really apply to CSPs.
+    In CSPs, the goal test is kind of built in as the constraints.
+b) In traditional searches, the heuristics are ways to narrow the tree of potential solutions down. In contrast, in CSPs,
+    the heuristics are more shortcuts to bypass and solve for multiple constraints at once or in one step.
