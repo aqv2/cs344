@@ -1,0 +1,5 @@
+Introspection would not be particularly helpful when it comes to informing AI how to model human cognitive processes.
+This is because the only reason introspection is necessary is to inform ourselves of our processes. We are often unaware
+of our own patterns and habits of thinking, and introspection is an attempt to get at those patterns and habits and to
+become self-aware in that area. In contrast to humans, an AI is just it's pattern and habit; there is nothing for it
+to not be "self-aware" of in the first place. There is no hiding an AI from itself.
