@@ -1,0 +1,43 @@
+Exercise 4.3
+
+a)
+    Formulating the problem:
+            User T | User F
+    Test T .08811  | .0182
+    Test F .00089  | .8937
+
+    i. P(user) = .089 (given in problem statement)
+       P(test) = .10631
+    ii. P(test | user) = (P(test) * P(user | test)) / P(user)
+                       = (.10631 * (P(user and test) / P(.10631))) / P(.089)
+                       = (.10631 * (.08811 / .10631)) / .089
+                       = .99 (given in problem, but there you go :P)
+
+    iii. P(~test | user) = 1 - P(test | user)
+                         = 1 - .99
+                         = .01
+
+    iv. P(test | ~user) = (P(test) * P(~user | test)) / P(~user)
+                        = (.10631 * (P(~user and test) / P(.10631)) / .911)
+                        = (.10631 * (.0182 / .10631)) / .911
+                        = .01453
+
+    v. P(user | test) = (P(user) * P(test | user)) / P(test)
+                        = (.089 * (P(user and test) / P(.089)) / .10631)
+                        = (.089 * (.08811 / .089)) / .10631
+                        = .8388
+
+b)
+    Formulating the problem:
+        BC T | BC F
+    M T .008 | .096
+    M F .002 | .894
+
+    P(BC | M) = (P(BC) * P(M | BC)) / P(M)
+              = (.01 * (P(M and BC) / .01) / .104)
+              = (.01 * (.008 / .01)) / .104
+              = .0769
+
+    So she has only about an 8% chance of having breast cancer given a positive mammography. This makes sense because,
+    well, a false positive on the mammography is so much more likely (almost 10 times more likely, in fact) than
+    actually having breast cancer.
