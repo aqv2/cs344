@@ -1,0 +1,40 @@
+Alastair Van Maren & Michel Momeyer
+
+Framing!
+1. What you want the machine learned model to do:
+    We want the ML model to learn how to play checkers.
+
+2. Ideal outcome:
+    It can beat the best checkers players in the world!
+
+3. Success metrics:
+    Whether or not it wins a game, the end result is the success (or failure) metric.
+
+4. The output:
+    Wins / losses over the course of a given number of games.
+    OR
+    Avg turns taken per win over the course of a given number of games.
+
+5. Using the output:
+    We just want the output available after a given number of games, or perhaps presented live in a graph form.
+
+6. Heuristics:
+    We would probably use alpha-beta pruning and quantifiable evaluations of the board state, such as number of
+    pieces left on either side, number of pieces threatening and being threatened, number of pieces aligned
+    to make for easy jumps, and/or number of kings.
+
+Formulating!
+7a. Formulated as ML problem: Probably binary classification.
+
+7b. We are already going with binary classification.
+
+8. Designing data for the model:
+    Each row is a game, listed in order of moves.
+
+9. Where the data comes from:
+    Each input is list of the n'th moves for the set of training games coupled with the win or loss.
+
+10. Easily obtained inputs:
+    Any set of moves should work fine; our inputs are pretty indistinguishable from each other
+    so which ones you pick probably don't really matter. You would probably want them to be contiguous or
+    at least recurrent (every fifth move, every tenth move, etc).

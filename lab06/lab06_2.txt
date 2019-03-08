@@ -1,0 +1,6 @@
+Partner: Michel Momeyer
+
+The gain for this problem is .196. It makes sense that we would learn more from this than from the type question,
+which gave us no information. This is worse than the patrons question, though.
+E(V) = 1
+Remainder = 0.80429
