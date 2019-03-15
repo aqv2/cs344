@@ -1,0 +1,24 @@
+a)
+Task 1:
+I'm confused by the median_income values. 4.1 what? This data needs units or something.
+The other data looks pretty reasonable to me. The std of the latitude and longitude definitely makes it look like
+these houses are all in the same-ish region, although I personally have no idea if that region is in CA.
+
+Task 2:
+I genuinely had no idea about this one. They say that the training/validation data split was likely flawed, but I'm
+not sure why that is the case.
+
+Task 3:
+I don't see any bugs, although they did comment out the randomization, which seems like its probably a bad move . . .
+
+Task 4:
+I had no idea what to do in this exercise. They eventually arrive at a training model that makes some sense to me.
+
+Task 5:
+Again, I didn't know what they wanted me to code, I definitely don't have the familiarity with Tensorflow to do
+what they eventually, in the solution, show you. But what they did makes sense to me, in general.
+
+b)
+It is important to split your data randomly between training and validation datasets, to ensure that no odd biases
+slip into what you are doing. In addition, you should verify your results with a testing dataset to make sure that your
+case is not an outlier in the set of cases.

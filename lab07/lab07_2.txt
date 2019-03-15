@@ -1,0 +1,23 @@
+a)
+Categorical data is textual, while numerical data is (you guessed it!) numerical. They do say that sometimes you want to
+treat numerical data as categorical, though, so it isn't quite as cut and dried as the categories may imply.
+
+b)
+Task 1:
+I achieved an eventual RMSE of <180 merely by increasing the learning rate by a factor of 10. My hyperparameters were:
+    learning_rate = 0.0001
+    steps = 100
+    batch_size = 1
+    with an RMSE (after a few periods) of: 167.37
+
+Task 2:
+    train_model(
+        learning_rate = 0.0001,
+        steps = 100
+        batch_size = 1
+        input_feature = "population"
+
+c)
+Hyperparameters are the parameters not of the data, but of the ML algorithm that is operating on and learning from the
+data. There is no standard algorithm for tuning them although there are rules of thumb; it varies depending on the
+dataset, and just takes some tweaking on a case-by-case basis.

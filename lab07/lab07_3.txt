@@ -1,0 +1,22 @@
+a)
+Task 1:
+california_housing_dataframe["rooms_per_person"] = (california_housing_dataframe["total_rooms"] /
+    california_housing_dataframe["population"])
+
+Task 2:
+NOTE: These first two lines are nowhere in the scatter docs that they link, and I don't know how they expected me to know
+    to do them . . .
+plt.figure(figsize=(15, 6))
+plt.subplot(1,2,1)
+plt.scatter(calibration_data["predictions"], calibration_data["targets"])
+
+Task 3:
+california_housing_dataframe["rooms_per_person"] = (california_housing_dataframe["rooms_per_person"]).apply(lambda x: min(x, 5))
+
+b)
+Synthetic features allow you to sort of build your own features out of the dataset to train your model on. Which can
+help you learn more about your dataset by empowering you to ask deeper questions and get deeper answers.
+
+c)
+Outliers are values that appear to be exceptions to a trend in the values of a data. They are usually clipped (after being
+carefully considered to ensure that they don't represent very meaningful data).

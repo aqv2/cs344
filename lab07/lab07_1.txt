@@ -1,0 +1,18 @@
+a)
+Excercise 1:
+cities["Large and Holy"] =
+        (cities["Area square miles"] > 50 & cities['City name'].apply(lambda val: val.startswith("San"))
+
+Excercise 2:
+When you reindex with values not in the original values, it creates rows that are effectively empty. I guess this allows
+you to more easily model real-world data with Pandas? Because I would guess that real world data rarely has values
+in every row, all the time . . .
+
+b)
+Pandas is built specifically for this kind of stuff, while Numpy is much, much more general. So while they do have some
+overlapping functionality, Pandas is probably both more efficient and easier to use for these specific things. It's
+a classic deep vs wide dichotomy.
+
+c)
+You could integrate reordering your data into your testing, to make sure that the indices you are using are all accurately
+named indices rather than positional ones, which for larger datasets is probably, shall we say, the opposite of a best practice.
