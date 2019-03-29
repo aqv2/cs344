@@ -1,0 +1,24 @@
+a)
+The Pearson correlation coefficient measures linear correlation between two variables. It is between -1 and 1, with
+-1 being total negative linear correlation and 1 being total positive linear correlation (and 0 being no correlation
+at all). The correlation between total rooms and total bedroom is almost 1.0 (0.9), which makes a lot of sense because
+larger houses (i.e. ones with more total rooms) also tend to have more bedrooms; that is, bedroom count intuitively would
+scale linearly with total room count. And that appears to be the case.
+
+b)
+Task 1:
+minimal_features = [
+    "housing_median_age",
+    "population"
+]
+
+Task 2:
+N.B. I went with one of their examples, because I couldn't think of other interesting features to do with latitude.
+
+def select_and_transform_features(source_df):
+  selected_examples = pd.DataFrame()
+  selected_examples["distance_from_san_francisco"] = abs(source_df["latitude"] - 38)
+  return selected_examples
+
+My error started at just over 230 and lowered itself over the course of 9 periods to 183, which is unfortunately higher
+than Google's example.

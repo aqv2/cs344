@@ -1,0 +1,20 @@
+a)
+Seaborn seems overall like it requires more configuration at an individual level than matplotlib. That being said, the
+the greater level of customization can be a strength, if that is what you need.
+
+b)
+This dataset has about 400 rows, which seems a little too small to really draw clean conclusions out of, but large enough
+to draw helpful and interesting examples from. So basically it is ideal for this education application.
+
+c)
+The prescribed normalization takes all the differing ranges of values and makes them all be roughly in the same range, so
+that it is more easy to compare them.
+
+d)
+This is an example of mean absolute error, rather than linear error.
+
+e)
+They specifically say that this is the case to avoid overfitting. This make intuitive sense to me, because you want your
+network to be appropriate to your problem and to the data that you have available. If your network is too powerful and
+complicated, you run the risk of it drawing conclusions too strongly from your data. In contrast, if you have enough data,
+your model is going to be more comprehensive, and so you can support a more complicated network.
