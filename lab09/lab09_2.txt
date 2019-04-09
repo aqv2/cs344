@@ -1,0 +1,11 @@
+9.2
+
+a)
+We do this because it makes for smaller, more efficient models of the data that we care about. It also helps avoid overfitting.
+
+b)
+If we have a bunch of features that we can determine are not particularly relevant to the question at hand, we can choose
+to ignore them, which makes everything run more smoothly and helps avoid overfitting of the model.
+
+c)
+I managed to achieve LogLoss of 0.25, with model size of 755, using a gamma of 0.01.

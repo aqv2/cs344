@@ -1,0 +1,14 @@
+9.3
+Excercise 1
+i. The dataset on Kaggle is 25000 images, but we only use 2000 in this excercise.
+
+ii. It performs far, far better, but we later learn that we are massively overfitting, and I don't think we were in class.
+
+iii. It looks like the net learns to look for the curvature of the cat's back, which is interesting, I think. And makes
+sense, given the angle people tend to photograph cats from.
+
+Excercise 2
+i. Data Augmentation mutates the data in some predictable way so that the model never sees the same exact picture twice.
+
+ii. The best results gave about 77% accuracy, with 10 steps per epoch, and 25 validation steps (and 30 epochs, as per
+the instructions).

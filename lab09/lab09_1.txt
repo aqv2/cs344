@@ -1,0 +1,25 @@
+9.1
+
+a)
+It doesn't fare that well. Over the course of the 9 periods that it trained, there was very, very little improvement of
+RMSE.
+
+b)
+For a binary thing like this, L2 loss doesn't capture very meaningful data. That is, when your monkey-chances are 50/50,
+when the model gets it wrong, it ought to be pretty heavily penalized. This is where LogLoss is helpful, because it does
+penalize errors of that sort.
+
+c)
+It fares much better, displaying a much more pronounced overall downward trend in LogLoss, which is more appropriate to
+the problem, but also much more punishing. So logistic regression performed better against a harder measurement, making
+it doubley better than L2 loss on a naive model.
+
+d)
+The best results I was able to achieve were:
+AUC: 0.75
+Accuracy: 0.76
+
+Using the hyperparameters:
+learning_rate: 0.0000005
+steps: 10000
+batch_size: 500
