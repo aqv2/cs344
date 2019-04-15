@@ -1,0 +1,39 @@
+a)
+It adapts the learning rate on the fly for each coefficient, always lowering the effective learning rate as it does so.
+
+b)
+Task 1:
+Best Hyperparameters:
+    my_optimizer=tf.train.GradientDescentOptimizer(learning_rate=0.01),
+    steps=2000,
+    batch_size=50,
+    hidden_units=[10, 10],
+
+Performance:
+RMSE 70
+
+Task 2:
+Best Hyperparameters:
+    my_optimizer=tf.train.AdagradOptimizer(learning_rate=0.5),
+    steps=500,
+    batch_size=100,
+    hidden_units=[10, 10],
+
+And:
+    my_optimizer=tf.train.AdamOptimizer(learning_rate=0.009),
+    steps=500,
+    batch_size=100,
+    hidden_units=[10, 10],
+
+Performance:
+Both performed at about 70 RMSE
+
+Task 3:
+Best Hyperparameters:
+    my_optimizer=tf.train.AdagradOptimizer(learning_rate=0.15),
+    steps=1000,
+    batch_size=50,
+    hidden_units=[10, 10, 10],
+
+Performance:
+66 RMSE

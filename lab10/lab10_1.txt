@@ -1,0 +1,18 @@
+a)
+I would rather use Keras, just because it makes (almost) everything more simple than TensorFlow. That being said, it
+seems that TensorFlow has a convenient and Keras-y way to do layers with its "hidden_units" hyperparameter, which I
+appreciate.
+
+b)
+Task 1:
+dnn_regressor = train_nn_regression_model(
+    learning_rate=0.001,
+    steps=1000,
+    batch_size=200,
+    hidden_units=[50, 25],
+
+Performance:
+RMSE 113.33
+
+Task 2:
+Final RMSE (on test data): 111.32

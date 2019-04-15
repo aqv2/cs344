@@ -1,0 +1,11 @@
+a)
+It shows which digits we confused with other digits; i.e. which digits look like the wrong type of digit to our NN.
+
+b)
+The TensorFlow architecture is significantly more fine-tunable in its setup than the Keras architecture. In addition,
+the TensorFlow architecture has two hidden layers of 100 RELU nodes each, which is much larger (and more slow)
+than our Keras architecture.
+I could make no improvements to the original architecture that they had. Every change I made just had a worse performance.
+
+c)
+The confusion matrix is much, much more full of errors at 10 steps vs 1000. 1000 is clearly better, here.

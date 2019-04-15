@@ -1,0 +1,16 @@
+a)
+There are times where it may perform better or more efficiently than a deep NN, but generally no.
+
+b)
+Yes it does, but not by very much.
+
+c)
+Embeddings appear to actually be harmful, lowering the accuracy by several percentage points.
+
+d)
+"Enjoyed" and "brilliant" are right next to each other. This makes sense, since brilliant is generally a positive adjective;
+people are unlikely to describe somethin they didn't enjoy as brilliant.
+
+e)
+The best hyperparameters I found were 2 hidden layers of 10 and 5, with 10000 steps every layer. My accuracy was 0.8678.
+This network took about 5 minutes to run through one set, though, so it is definitely not fast!
