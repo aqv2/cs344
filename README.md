@@ -1,5 +1,5 @@
 ## CS 344 - Artificial Intelligence - Poetry Like  Milton Project
-The project folder contains an LSTM to generate poetry trained on John Milton's Paradise Lost
+The _project_ folder contains an LSTM to generate poetry trained on John Milton's Paradise Lost
 
 It uses Keras for machine  learning, and a raw txt file for training.
 
