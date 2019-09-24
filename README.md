@@ -3,4 +3,4 @@ The _project_ folder contains an LSTM to generate poetry trained on John Milton'
 
 It uses Keras for machine  learning, and a raw txt file for training.
 
-This code is visible, along with an explanation, in a Jupyter Notebook.
+This code is visible, along with an explanation, in a Jupyter Notebook, [here](https://colab.research.google.com/drive/1Ybo-7jR2LjRAmkQnXsxXNTsonFMcM7S7).
